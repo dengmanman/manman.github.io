@@ -86,7 +86,7 @@ return num
 <script>
 window.onload=function(){
 	var li=document.getElementsByTagName("li");
-	
+	var div=document.getElementsByTagName("div");
 	
 	console.log(li);
 	
@@ -105,7 +105,7 @@ window.onload=function(){
 		
 		}
 			this.className="now";
-			this.parentNode.onclick=function(){
+			div[0].onclick=function(){
 			this.className='';
 			}
 			//this.style.zindex=99;
