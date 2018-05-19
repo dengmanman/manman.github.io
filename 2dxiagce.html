@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+	*{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	}
+	
+	div ul{
+	width:100%;
+	height:100%;
+	
+	
+	}
+	ul{
+	position:relative;
+	}
+	li{
+	position:absolute;
+	width:200px;
+	height:300px;
+	left:0px;
+	top:0px;
+	transition:all 2s;
+	}
+	
+	.now{
+	left:700px !important;
+	top:300px !important;
+	z-index:99;
+	transform:rotate(0deg) translate(-50%,-50%) scale(2) !important;
+	
+	}
+	img{
+	width:200px;
+	height:300px;
+	border:5px solid #ccc;
+	}
+	
+</style>
+</head>
+
+<body>
+
+<div>
+	<ul>
+		<li><http://img2.imgtn.bdimg.com/it/u=3230048072,2699860795&fm=214&gp=0.jpg"></li>
+		<li><img src="http://sjbz.fd.zol-img.com.cn/t_s320x510/g5/M00/00/01/ChMkJ1fJUpGIX_czAAbRtQU0Fs8AAU9kwPN67cABtHN950.jpg"></li>
+		<li><img src="http://img01.51y5.net/wk002/M00/7A/24/wKhuFlVtMgKAHTcVAAHLwKAjePw087.jpg"></li>
+		<li><img src="http://img3.imgtn.bdimg.com/it/u=2150896799,1456156786&fm=15&gp=0.jpg"></li>
+		<li><img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1504/26/c0/5977307_1430058882464_320x480.jpg"></li>
+		<li><img src="http://img1.imgtn.bdimg.com/it/u=2070346004,1125702245&fm=27&gp=0.jpg"></li>
+		<li><img src="http://easyread.ph.126.net/X2r8qjdVZhTfEHvucS5t9w==/7917025779222576433.jpg"></li>
+		<li><img src="http://wapfile.desktx.com/320480/0723/160723bxnwbpid2kc.jpg"></li>
+		<li><img src="http://img.kutoo8.com/upload/image/50399389/001%20%288%29_320x480.jpg"></li>
+		<li><img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1504/22/c0/5780842_1429685851948_320x480.jpg"></li>
+		<li><img src="http://s1.sinaimg.cn/mw690/004h2UmMgy6SB60lP9ee0"></li>
+	</ul>
+
+</div>
+<div>
+<h1>案例总结</h1>
+<p>
+1.自定义一个随机数函数function randum(start,end){
+var length=end-start;
+var num=parseInt(Math.random()*(length)+start)
+return num
+}
+</p><hr>
+<p>
+2.注意书写，css样式，不要写成xx=xx；
+</p><hr>
+<p>
+3.z-index在js里要写成zindex。而且z-index用法是在定位流中有效的，分两种情况，父元素无z-index属性，则由子元素z-index属性大小决定，大的显示在上面。
+父元素有z-index属性则由父元素z-index属性大小决定大的从属子元素显示在上面。
+</p><hr>
+<p>
+4.获取屏幕大小为document.documentElement.clientWidth和document.documentElement.clientHeight分别获取宽和高。
+</p><hr>
+</div>
+</body>
+
+<script>
+window.onload=function(){
+	var li=document.getElementsByTagName("li");
+	
+	
+	console.log(li);
+	
+	for(var i=0;i<li.length;i++){
+	var x=document.documentElement.clientWidth-300;
+	var y=document.documentElement.clientHeight-400;
+	console.log(x,y)
+	a=li[i].style.left=randomNum(0,x)+"px";
+	b=li[i].style.top=randomNum(0,y)+"px";
+	console.log(a,b)
+	li[i].style.transform="rotate("+randomNum(0,360)+"deg"+")";
+		li[i].onclick=function(){
+		for(var j=0;j<li.length;j++){
+			li[j].className="";
+			console.log(li[j].style.zindex)
+		
+		}
+			this.className="now";
+			this.onmouseout=function(){
+			this.className='';
+			}
+			//this.style.zindex=99;
+			//console.log(this.style.zindex)
+			//console.log(this.parentNode.style.zindex)
+		}
+	}
+	
+
+}
+
+function randomNum(start,end){
+var length=end-start;
+var num=parseInt(Math.random()*(length)+start);
+return num;
+}
+</script>
+
+
+
+</html>
