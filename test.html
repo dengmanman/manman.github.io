@@ -1,75 +1,70 @@
 <html>
 <head>
-	<style>
-		canvas{background:black;}
-	</style>
+<style>
+#box{
+	width:100%;
+	height:100px;
+	margin:100px auto;
+	background:#c8d;
+	transition:background 10s;
+}
+
+li{
+	list-style:none;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	font-size:50px;
+	transition:margin-left 10s ease 0s;
+}
+div:hover li{
+	margin-left:70px;
+	
+}
+div:hover{
+	background:rgba(17,143,50,0.5)
+}
+</style>
 </head>
 <body>
-	<canvas id='mycanva' ></canvas>
+	<div id="box">
+		<ul>
+			<li>慢</li>
+			<li>慢</li>
+			<li>带</li>
+			<li>你</li>
+			<li>狂</li>
+			<li>虐</li>
+			<li>H</li>
+			<li>T</li>
+			<li>M</li>
+			<li>L</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<div>
+	<h1>过渡动画笔记</h1>
+	<p>
+	1.过渡动画控制属性为transition，与javascri的触发机制是一样的，需要事件驱动，在此案例中，div：hover li{margin-left:70px;}就是事件驱动。
+	</p><hr>
+	<p>
+	2.当触发机制设置好之后即可设置transition属性，tansition属性有四个控制属性，transition-property（需要过渡的属性），transition-durantion（整个过渡过程的时间），transition-time-function（速度控制），
+	transition-delay（过渡动画延迟时间）。
+	</p><hr>
+	<p>
+	3.过渡动画最少需要具备要素才能实现，1.触发事件（div：hover li{margin-left:70px;}）2.变化属性（transition-property），3.动画时间（transition-duration）。
+	</p><hr>
+	<p>
+	4.高级连写方式transition：property durantion time-fuction delay；
+	有多个过渡属性可以设置成transition：property durantion time-fuction delay,property durantion time-fuction delay；
+	</p><hr>
+	
+	
+	</div>
+	
+
 </body>
-<script>
-	var canva=document.getElementById('mycanva');
-	var ctx=canva.getContext('2d');
-	var w=canva.width=window.innerWidth;
-	var h=canva.height=window.innerHeight;
-	function dot(){
-		this.x=Math.random()*w;
-		this.y=Math.random()*h;
-		this.r=1;
-		this.vx=Math.random()*3-1;
-		this.vy=Math.random()*3-1;
-		var rad=Math.random()*255>>0;
-		var green=Math.random()*255>>0;
-		var blue=Math.random()*255>>0;
-		//this.rad=Math.random()*255>>0;
-		this.color='rgb('+rad+','+green+','+blue+',)';
-	}
-	var dots=[];
-	for(var i=0;i<200;i++){
-		dots.push(new dot());
-		
-	}
-	console.log(dots);
-	console.log(dots.lenght);
-		//ctx.fillStyle='rgb(0,188,240)';
-		//ctx.fillRect(0,0,100,100);
-	
-	function draw(x,y,r){
-		ctx.clearRect(0,0,w,h);
-		for(var i=0;i<dots.length;i++){
-		//ctx.fillStyle='rgb(0,188,240)';
-		//ctx.fillRect(0,0,100,100);
-		
-		
-		
-		ctx.beginPath();
-		ctx.fillStyle='rgb(0,188,240)';
-		ctx.arc(dots[i].x,dots[i].y,dots[i].r,0,Math.PI*2,true);
-		ctx.fill();
-		
-		dots[i].vx*=(dots[i].x>w||dots[i].x<0)?-1:1;
-		dots[i].vy*=(dots[i].y>h||dots[i].y<0)?-1:1;
-		
-		dots[i].x+=dots[i].vx;
-		dots[i].y+=dots[i].vy;
-			for(var j=0;j<dots.length;j++){
-				var xd=dots[i].x-dots[j].x;
-				var yd=dots[i].y-dots[j].y;
-				var distance=xd*xd+yd*yd;
-				if(distance<6000){
-					ctx.beginPath();
-					ctx.strokeStyle='rgba(145,111,180,0.3)';
-					ctx.moveTo(dots[i].x,dots[i].y);
-					ctx.lineTo(dots[j].x,dots[j].y);
-					ctx.stroke();
-				}
-			}
-		
-		}		
-		
-	}
-	setInterval(draw,1000/60)
-	
+</html>
 	
 	
 	
