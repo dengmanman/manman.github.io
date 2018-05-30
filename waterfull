@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<style>
+*{
+	margin:0px;
+	padding:0px;
+}
+.phothoWrap{
+		margin:0 auto;
+		position:relative;
+	}
+.box{
+	width:234px;
+	padding-top:10px;
+	padding-left:10px;
+	
+	float:left;
+		
+}
+.box img{
+	width:220px;
+	padding:5px;
+	border:2px solid #ccc;
+	background:#ccc;
+}
+</style>
+</head>
+
+<body>
+	<div class="phothoWrap">
+		<div class="box">
+			<img src="http://img4.duitang.com/uploads/blog/201408/04/20140804220955_BkkKa.jpeg">
+			
+		</div>
+		<div class="box">
+			<img src="http://img16.3lian.com/gif2016/q19/94/48.jpg">
+			
+		</div>
+		<div class="box">
+			<img src="http://pic6.wed114.cn/20141103/2014110314130559502407.jpg">
+			
+		</div>
+		<div class="box">
+			<img src="http://img0.imgtn.bdimg.com/it/u=4169507887,2662315731&fm=27&gp=0.jpg">
+			
+		</div>
+		<div class="box">
+			<img src="http://cdn.duitang.com/uploads/item/201404/21/20140421190417_fdYLN.thumb.700_0.jpeg">
+			
+		</div>
+		<div class="box">
+			<img src="http://img.mb.moko.cc/2016-10-20/f9190d86-2c93-4a5f-9fac-7e07f9ea7af8.jpg?imageView2/2/w/915/h/915">
+			
+		</div>
+		<div class="box">
+			<img src="http://img5.duitang.com/uploads/item/201212/28/20121228125022_Z25Cm.thumb.700_0.jpeg">
+			
+		</div>
+		<div class="box">
+			<img src="http://img3.yxlady.com/fs/UploadFiles_2682/20160725/2016072515153702.jpg">
+			
+		</div>
+		<div class="box">
+			<img src="http://img00.hc360.com/cloth/201406/201406111746319397.jpg">
+			
+		</div>
+		<div class="box">
+			<img src="http://img4.cache.netease.com/cnews/2015/9/27/20150927174501059fb.jpg">
+			<p></p>
+		</div>
+		<div class="box">
+			<img src="http://s4.sinaimg.cn/mw690/003vZDgAgy6KQITRugjb3&690">
+		</div>	
+		
+		<div class="box">
+		<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=288053890,1372682204&fm=27&gp=0.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img.kutoo8.com/upload/thumb/701285/ffb725444e8105544f0e6db936377791_320x480.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img.zcool.cn/community/01d1075556def40000009af0fd21e9.jpg@1280w_1l_2o_100sh.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img4.duitang.com/uploads/item/201412/16/20141216150348_VVend.thumb.700_0.png">
+		</div>
+		<div class="box">
+		<img src="http://enjoy.eastday.com/eastday/enjoy1/2014slideshow/2014092401/images/02632417.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img4q.duitang.com/uploads/item/201406/13/20140613230021_B8MsK.jpeg">
+		</div>
+		<div class="box">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526808746070&di=20d3a39f32da53072a416384c23dfac3&imgtype=0&src=http%3A%2F%2Fs6.sinaimg.cn%2Fmw690%2F002KDSPGgy6JcSuJZIxf5%26690">
+		</div>
+		<div class="box">
+		<img src="http://s16.sinaimg.cn/mw690/00688Qhgzy74AlQZzmDbf&690">
+		</div>
+		<div class="box">
+		<img src="http://img0.imgtn.bdimg.com/it/u=3699718410,1968295902&fm=214&gp=0.jpg">
+		</div>
+		<div class="box">
+		<img src="http://cdn.duitang.com/uploads/item/201409/07/20140907094037_terYN.png">
+		</div>
+		<div class="box">
+		<img src="http://5.595818.com/2014/pic/000/358/0b05e3080df5033289ae007224b00971.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img2.imgtn.bdimg.com/it/u=2745671102,1691231720&fm=214&gp=0.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img.zcool.cn/community/013f8e55c36f946ac72558087747ac.jpg@2o.jpg">
+		</div>
+		<div class="box">
+		<img src="http://pic6.wed114.cn/20141112/2014111215233005076427.jpg">
+		</div>
+		<div class="box">
+		<img src="http://imgbbs.heiguang.net/forum/201407/14/153813zrvjrz9rc0b6ddr2.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img5.duitang.com/uploads/item/201409/21/20140921120534_iCsJS.thumb.700_0.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img.zcool.cn/community/01de295a6f1b96a801213466b4d857.jpg@2o.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img5.duitang.com/uploads/blog/201411/23/20141123134241_yyzdu.thumb.700_0.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img4.duitang.com/uploads/item/201212/28/20121228125454_FAwRT.thumb.700_0.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img4.duitang.com/uploads/item/201405/24/20140524211745_BeyZh.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img5.duitang.com/uploads/item/201509/08/20150908153216_fQVh8.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img3.imgtn.bdimg.com/it/u=3915240393,4011338873&fm=214&gp=0.jpg"></div>
+		<div class="box"><img src="http://img4.imgtn.bdimg.com/it/u=3632742804,641401023&fm=214&gp=0.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img.zcool.cn/community/018d835556deb40000009c50530375.jpg@1280w_1l_2o_100sh.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img5.duitang.com/uploads/item/201509/08/20150908164536_rh2QT.thumb.700_0.png">
+		</div>
+		<div class="box">
+		<img src="http://img4q.duitang.com/uploads/item/201506/16/20150616162319_M2RLu.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img0.imgtn.bdimg.com/it/u=1756031400,151048088&fm=214&gp=0.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img4.duitang.com/uploads/blog/201407/15/20140715143815_a5cxB.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img1.imgtn.bdimg.com/it/u=2328217331,3258222227&fm=214&gp=0.jpg">
+		</div>
+		<div class="box">
+		<img src="http://img3.duitang.com/uploads/blog/201411/17/20141117025646_HNXFY.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img5q.duitang.com/uploads/item/201410/17/20141017231832_dHJLU.jpeg">
+		</div>
+		<div class="box">
+		<img src="http://img2.imgtn.bdimg.com/it/u=3725152779,3060287799&fm=27&gp=0.jpg">
+		</div>
+	
+	
+	</div>
+</div>
+
+	
+<script>
+
+	window.onload=function(){
+	var wrap=document.getElementsByClassName("phothoWrap")[0];
+	var box=document.getElementsByClassName("box");
+	var colse=parseInt(document.documentElement.clientWidth/box[0].offsetWidth);
+	var height=[];
+	wrap.style["width"]=colse*box[0].offsetWidth+"px";
+	for(var i=0;i<colse;i++){
+				height.push(box[i].offsetHeight);
+			}
+	waterfull(colse,box.length);
+	
+	function getHeight(height){
+		minHeight=Math.min.apply(this,height);
+		return minHeight;
+			
+		
+		
+	}
+	function getindex(array,value){
+		for(var i=0;i<array.length;i++){
+			if(array[i]===value){
+				return i;
+			}
+		}
+	}
+	
+	function waterfull( start,end){
+		for(var i=start;i<end;i++){
+			min=getHeight(height);
+			index=getindex(height,min);
+			box[i].style["position"]="absolute";
+			box[i].style["top"]=min+"px";
+			box[i].style["left"]=box[i].offsetWidth*index+"px";
+			height[index]+=box[i].offsetHeight;
+			
+		}
+		
+	}
+	
+	console.log(min,index)
+	
+	}
+	//console.log(height);
+</script>
+</body>
+
+
+
+</html>
