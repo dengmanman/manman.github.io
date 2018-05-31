@@ -361,111 +361,153 @@ li{
 	0% { opacity: .2; box-shadow:0 1px 2px rgba(255,255,255,0.1);}
     100% { background:skyblue;opacity: 1;border:1px solid rgba(59,235,235,1); box-shadow:0 1px 30px rgba(59,255,255,1); }
 }
+.all{
+	position:relative;
+}
 
+#mycanva{
+	z-index:-1;
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+}
 </style>
 </head>
 
 <body>
-<div class="nav">
-<ul>
-<li>网页特效</li>
-<li>常用网站</li>
-<li>随笔记录</li>
-<li>电影解析</li>
-<li>HTML游戏</li>
-</ul>
-
-
-</div>
-<div class="book">
-	<div class="content">
-		<div class="left">
-		<h1>个人简历</h1>
+<div class="all">
+	<canvas id='mycanva' ></canvas>
+	<div class="center">
+		<div class="nav">
 		<ul>
-			<li>姓名：邓文彪</li>
-			<li>性别：男</li>
-			<li>出生日期：1994.08.24</li>
-			<li>学历：专科</li>
-			<li>毕业院校：东莞职业技术学院</li>
-			<li>专业：电子信息工程技术</li>
-			<li>毕业时间：2016年6月</li>
-			<li>求职：前端程序猿</li>
-			<li>技能：html、css、JavaScript</li>
-			<li></li>
-			<li>自我简介：</li>
-			<li>对网页制作有较强兴趣，自学转</li>
-			<li>前端。能熟练掌握div+css布局</li>
-			<li>基本掌握dom事件，能做一些小</li>
-			<li>特效。比如能进行瀑布流布局，</li>
-			<li>手写轮播图，放大镜特效。</li>
-			<li>目前在学vue，将来会学node。</li>
-			<li>希望能有向前端大佬学习的机会。</li>
+		<li>网页特效</li>
+		<li>常用网站</li>
+		<li>随笔记录</li>
+		<li>电影解析</li>
+		<li>HTML游戏</li>
 		</ul>
+
+
 		</div>
-		<div class="right">
-			<h3>一些小demo</h3>
-			<div class="demo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527767241154&di=bfee5fd49b107d91dbd8ebed7dec65a5&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01b70d568ba66f32f8754c80a64fde.jpg%401280w_1l_2o_100sh.jpg"><a href="http://www.dengmanman.top/xiaomi.html" target="_blank">仿小米官网</a></div>
-			<div class="demo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527767652477&di=e7bf8fdaea32d732f36b0eea133dde75&imgtype=0&src=http%3A%2F%2Fwww.17sucai.com%2Fupload%2F401021%2F2015-08-31%2F87e2c900c60c5178454fdaf4da490951_big.jpg"><a href="http://www.dengmanman.top/waterfull.html" target="_blank">瀑布流布局</a></div>
+		<div class="book">
+			<div class="content">
+				<div class="left">
+				<h1>个人简历</h1>
+				<ul>
+					<li>姓名：邓文彪</li>
+					<li>性别：男</li>
+					<li>出生日期：1994.08.24</li>
+					<li>学历：专科</li>
+					<li>毕业院校：东莞职业技术学院</li>
+					<li>专业：电子信息工程技术</li>
+					<li>毕业时间：2016年6月</li>
+					<li>求职：前端程序猿</li>
+					<li>技能：html、css、JavaScript</li>
+					<li></li>
+					<li>自我简介：</li>
+					<li>对网页制作有较强兴趣，自学转</li>
+					<li>前端。能熟练掌握div+css布局</li>
+					<li>基本掌握dom事件，能做一些小</li>
+					<li>特效。比如能进行瀑布流布局，</li>
+					<li>手写轮播图，放大镜特效。</li>
+					<li>目前在学vue，将来会学node。</li>
+					<li>希望能有向前端大佬学习的机会。</li>
+				</ul>
+				</div>
+				<div class="right">
+					<h3>一些小demo</h3>
+					<div class="demo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527767241154&di=bfee5fd49b107d91dbd8ebed7dec65a5&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01b70d568ba66f32f8754c80a64fde.jpg%401280w_1l_2o_100sh.jpg"><a href="http://www.dengmanman.top/xiaomi.html" target="_blank">仿小米官网</a></div>
+					<div class="demo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527767652477&di=e7bf8fdaea32d732f36b0eea133dde75&imgtype=0&src=http%3A%2F%2Fwww.17sucai.com%2Fupload%2F401021%2F2015-08-31%2F87e2c900c60c5178454fdaf4da490951_big.jpg"><a href="http://www.dengmanman.top/waterfull.html" target="_blank">瀑布流布局</a></div>
+				</div>
+				
+			
+			</div>
+			
 		</div>
-		
-	
+
 	</div>
+
 	
 </div>
-
-
-<script>
 	
-	
-	var  i=0,timer=null;
-	var ele=document.getElementById("box1");
-	
-		console.log(ele.children[0]);
-	var step=ele.children[0].offsetWidth;
-	animation(target,step);
-	window.onresize=function resize(){
-			ele=document.getElementById("box1");
-			step=ele.children[0].offsetWidth;
-			animation(target,step);
-	};
-	var target=step*5;
-	
-	
-	function turn(){
-	var list=document.getElementsByClassName("box")[0].children;//注意返回的是数组；
-	console.log(list);
-	//list[0].style.position="absolute";
-	
-	setInterval(function(){
-	
-		i-=1;
-		if(i===-5){i=0}
-		list[0].style.left=i*1200+"px";
-		console.log(list[0].style.left)
-	},1000)
-	}
-	//turn();
-	function animation(target,step){
-		clearInterval(timer);
-		timer=setInterval(function(){
-			
-			var offset=ele.offsetLeft;
-			//step=(target-ele.off)/0.2
-			//ele.offsetLeft+=step;
-			//ele.style.left=ele.offsetLeft+"px";
-			console.log(Math.abs(offset));
-			if(Math.abs(offset)==target){
-				offset=0;
-			}offset=offset-step;
-			ele.style.left=offset+"px";
-			console.log(target);
-		},1000)
-		
-		}
-		//animation(target,step);
-</script>
 </body>
-
+<script>
+	var canva=document.getElementById('mycanva');
+	var ctx=canva.getContext('2d');
+	var w=canva.width=window.innerWidth;
+	var h=canva.height=window.innerHeight;
+	function dot(){
+		this.x=Math.random()*w;
+		this.y=Math.random()*h;
+		this.r=1;
+		this.vx=Math.random()*3-1;
+		this.vy=Math.random()*3-1;
+		var rad=Math.random()*255>>0;
+		var green=Math.random()*255>>0;
+		var blue=Math.random()*255>>0;
+		//this.rad=Math.random()*255>>0;
+		this.color='rgb('+rad+','+green+','+blue+',)';
+	}
+	var dots=[];
+	for(var i=0;i<200;i++){
+		dots.push(new dot());
+		
+	}
+	console.log(dots);
+	console.log(dots.lenght);
+		//ctx.fillStyle='rgb(0,188,240)';
+		//ctx.fillRect(0,0,100,100);
+	
+	function draw(x,y,r){
+		ctx.clearRect(0,0,w,h);
+		for(var i=0;i<dots.length;i++){
+		//ctx.fillStyle='rgb(0,188,240)';
+		//ctx.fillRect(0,0,100,100);
+		
+		
+		
+		ctx.beginPath();
+		ctx.fillStyle='rgb(0,188,240)';
+		ctx.arc(dots[i].x,dots[i].y,dots[i].r,0,Math.PI*2,true);
+		ctx.fill();
+		
+		dots[i].vx*=(dots[i].x>w||dots[i].x<0)?-1:1;
+		dots[i].vy*=(dots[i].y>h||dots[i].y<0)?-1:1;
+		
+		dots[i].x+=dots[i].vx;
+		dots[i].y+=dots[i].vy;
+			for(var j=0;j<dots.length;j++){
+				var xd=dots[i].x-dots[j].x;
+				var yd=dots[i].y-dots[j].y;
+				var distance=xd*xd+yd*yd;
+				if(distance<6000){
+					ctx.beginPath();
+					ctx.strokeStyle='rgba(145,111,180,0.3)';
+					ctx.moveTo(dots[i].x,dots[i].y);
+					ctx.lineTo(dots[j].x,dots[j].y);
+					ctx.stroke();
+				}
+			}
+		
+		}		
+		
+	}
+	setInterval(draw,1000/60)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
 
 
 
