@@ -1,73 +1,473 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
+
 <head>
 <style>
-#box{
+
+*{margin:0px;padding:0px;text-decoration:none;}
+
+@media screen and (max-width:768px){
+.nav{
+width:100%;
+
+}
+.nav ul li{
+width:100%;
+display:block;
+}
+.book{
 	width:100%;
-	height:100px;
-	margin:100px auto;
-	background:#c8d;
-	transition:background 10s;
+	margin:0 auto;
+	border:1px solid #ccc;
 }
 
+.book{
+	width:100%;
+	margin:0 auto;
+	border:1px solid #ccc;
+}
+
+.content{
+	width:100%;
+	height:600px;
+	
+	margin:0 auto;
+}
+.content .left{
+	width:100%;
+	
+	
+	
+	
+}
+
+.content .left h1{
+	text-align:center;
+	
+
+}
+.content .left ul{
+	width:70%;
+	margin:0 auto;
+	height:500px;
+	
+	background:#fff;
+}
+.content .left ul li{
+	width:80%;
+	height:20px;
+	color:#000;
+	background:#fff;
+	border:none;
+	border-bottom:1px solid #888;
+	text-align:left;
+	line-height:18px;
+	
+}
+.content .right{
+	width:70%;	
+}
+.content .right h3{
+	text-align:center;
+}
+.content .right .demo{
+	width:70%;
+	height:250px;
+	margin:0 auto;
+}
+.content .right .demo img{
+	width:70%;
+	height:250px;
+}
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px){
+.nav{
+	width:750px;
+	
+ }
+ .nav ul li{
+width:110px;
+margin-left:15px;
+
+}
+
+
+.book{
+	width:750px;
+	margin:0 auto;
+	border:1px solid #ccc;
+}
+
+.content{
+	width:750px;
+	height:600px;
+	border:2px solid #000;
+	margin:0 auto;
+}
+.content .left{
+	width:360px;
+	height:580px;
+	border-left:10px solid #ccc;
+	border-bottom:10px solid #ccc;
+	border-right:1px solid #ccc;
+	box-shadow:10px 0px 10px 5px #bbc;
+	
+	
+	float:left;
+}
+
+.content .left h1{
+	text-align:center;
+	
+
+}
+.content .left ul{
+	width:300px;
+	margin:0 auto;
+	height:500px;
+	
+	background:#fff;
+}
+.content .left ul li{
+	width:300px;
+	height:25px;
+	color:#000;
+	background:#fff;
+	border:none;
+	border-bottom:1px solid #888;
+	text-align:left;
+	line-height:18px;
+	
+}
+.content .right{
+	width:360px;
+	height:580px;
+	border-right:10px solid #ccc;
+	border-bottom:10px solid #ccc;
+	border-left:1px solid #ccc;
+	box-shadow:-10px 0px 10px 5px #bbc;
+	float:right;
+}
+.content .right .demo{
+	width:350px;
+	height:280px;
+	margin:0 auto;
+}
+.content .right .demo img{
+	width:350px;
+	height:250px;
+}
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+.nav{
+	width:970px;
+	
+}
+.nav ul li{
+width:150px;
+margin-left:18px;
+}
+
+.book{
+	width:970px;
+	margin:0 auto;
+	border:1px solid #ccc;
+}
+
+.content{
+	width:970px;
+	height:600px;
+	border:2px solid #000;
+	margin:0 auto;
+}
+.content .left{
+	width:470px;
+	height:580px;
+	border-left:10px solid #ccc;
+	border-bottom:10px solid #ccc;
+	border-right:1px solid #ccc;
+	box-shadow:10px 0px 10px 5px #bbc;
+	
+	
+	float:left;
+}
+
+.content .left h1{
+	text-align:center;
+	
+
+}
+.content .left ul{
+	width:300px;
+	margin:0 auto;
+	height:500px;
+	
+	background:#fff;
+}
+.content .left ul li{
+	width:300px;
+	height:25px;
+	color:#000;
+	background:#fff;
+	border:none;
+	border-bottom:1px solid #888;
+	text-align:left;
+	line-height:18px;
+	
+}
+.content .right{
+	width:470px;
+	height:580px;
+	border-right:10px solid #ccc;
+	border-bottom:10px solid #ccc;
+	border-left:1px solid #ccc;
+	box-shadow:-10px 0px 10px 5px #bbc;
+	float:right;
+}
+.content .right .demo{
+	width:400px;
+	height:280px;
+	margin:0 auto;
+}
+.content .right .demo img{
+	width:400px;
+	height:250px;
+}
+
+
+}
+
+@media screen and (min-width:1200px){
+.nav{
+	width:1200px;
+	
+}
+
+.nav ul li{
+
+width:190px;
+margin-left:23px;
+color:#FFF;
+}
+.book{
+	width:1200px;
+	margin:0 auto;
+	border:1px solid #ccc;
+}
+.content{
+	width:900px;
+	height:600px;
+	border:2px solid #000;
+	margin:0 auto;
+	transform-style:preserve-3D;
+}
+.content .left{
+	width:425px;
+	height:580px;
+	border-left:10px solid #ccc;
+	border-bottom:10px solid #ccc;
+	border-right:1px solid #ccc;
+	box-shadow:10px 0px 10px 5px #bbc;
+	
+	
+	float:left;
+}
+
+.content .left h1{
+	text-align:center;
+	
+
+}
+.content .left ul{
+	width:300px;
+	margin:0 auto;
+	height:500px;
+	
+	background:#fff;
+}
+.content .left ul li{
+	width:300px;
+	height:25px;
+	color:#000;
+	background:#fff;
+	border:none;
+	border-bottom:1px solid #888;
+	text-align:left;
+	line-height:18px;
+	
+}
+.content .right{
+	width:425px;
+	height:580px;
+	border-right:10px solid #ccc;
+	border-bottom:10px solid #ccc;
+	border-left:1px solid #ccc;
+	box-shadow:-10px 0px 10px 5px #bbc;
+	float:right;
+	background:#fff;
+	transform-origin:0px center; 
+	transform:rotateY(20deg);
+}
+.content .right .demo{
+	width:400px;
+	height:280px;
+	margin:0 auto;
+}
+.content .right .demo img{
+	width:400px;
+	height:250px;
+}
+
+}
+
+
+
+.nav{
+	margin:0 auto;
+	
+	
+	
+
+}
+ul{
+	height:50px;
+	margin:0 auto;
+	background:#000;
+}
 li{
 	list-style:none;
-	float:left;
+	font-size:20px;
 	text-align:center;
-	line-height:100px;
-	font-size:50px;
-	transition:margin-left 10s ease 0s;
-}
-div:hover li{
-	margin-left:70px;
+	float:left;
+	line-height:48px;
+	padding:0 10px 0 10px;
+	background:#000;
+	border:1px solid #000;
+	color:#fff;
 	
 }
-div:hover{
-	background:rgba(17,143,50,0.5)
+
+.nav ul li:hover{animation:huxideng 2000ms infinite;}
+
+
+@keyframes huxideng{
+	0% { opacity: .2; box-shadow:0 1px 2px rgba(255,255,255,0.1);}
+    100% { background:skyblue;opacity: 1;border:1px solid rgba(59,235,235,1); box-shadow:0 1px 30px rgba(59,255,255,1); }
 }
+
 </style>
 </head>
-<body>
-	<div id="box">
-		<ul>
-			<li>慢</li>
-			<li>慢</li>
-			<li>带</li>
-			<li>你</li>
-			<li>狂</li>
-			<li>虐</li>
-			<li>H</li>
-			<li>T</li>
-			<li>M</li>
-			<li>L</li>
-			<li>5</li>
-		</ul>
-	</div>
-	<div><a href="test.html">知乎页面特效</a></div>
-	<div><a href="xiangce.html">2d相册</a></div>
-	<div><a href="xiaomi.html">仿小米官网</a></div>
-	<div><a href="waterfull.html">瀑布流</a></div>
-	waterfull.html
-	<div>
-	<h1>过渡动画笔记</h1>
-	<p>
-	1.过渡动画控制属性为transition，与javascri的触发机制是一样的，需要事件驱动，在此案例中，div：hover li{margin-left:70px;}就是事件驱动。
-	</p><hr>
-	<p>
-	2.当触发机制设置好之后即可设置transition属性，tansition属性有四个控制属性，transition-property（需要过渡的属性），transition-durantion（整个过渡过程的时间），transition-time-function（速度控制），
-	transition-delay（过渡动画延迟时间）。
-	</p><hr>
-	<p>
-	3.过渡动画最少需要具备要素才能实现，1.触发事件（div：hover li{margin-left:70px;}）2.变化属性（transition-property），3.动画时间（transition-duration）。
-	</p><hr>
-	<p>
-	4.高级连写方式transition：property durantion time-fuction delay；
-	有多个过渡属性可以设置成transition：property durantion time-fuction delay,property durantion time-fuction delay；
-	</p><hr>
-	
-	
-	</div>
-	
 
+<body>
+<div class="nav">
+<ul>
+<li>网页特效</li>
+<li>常用网站</li>
+<li>随笔记录</li>
+<li>电影解析</li>
+<li>HTML游戏</li>
+</ul>
+
+
+</div>
+<div class="book">
+	<div class="content">
+		<div class="left">
+		<h1>个人简历</h1>
+		<ul>
+			<li>姓名：邓文彪</li>
+			<li>性别：男</li>
+			<li>出生日期：1994.08.24</li>
+			<li>学历：专科</li>
+			<li>毕业院校：东莞职业技术学院</li>
+			<li>专业：电子信息工程技术</li>
+			<li>毕业时间：2016年6月</li>
+			<li>求职：前端程序猿</li>
+			<li>技能：html、css、JavaScript</li>
+			<li></li>
+			<li>自我简介：</li>
+			<li>对网页制作有较强兴趣，自学转</li>
+			<li>前端。能熟练掌握div+css布局</li>
+			<li>基本掌握dom事件，能做一些小</li>
+			<li>特效。比如能进行瀑布流布局，</li>
+			<li>手写轮播图，放大镜特效。</li>
+			<li>目前在学vue，将来会学node。</li>
+			<li>希望能有向前端大佬学习的机会。</li>
+		</ul>
+		</div>
+		<div class="right">
+			<h3>一些小demo</h3>
+			<div class="demo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527767241154&di=bfee5fd49b107d91dbd8ebed7dec65a5&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01b70d568ba66f32f8754c80a64fde.jpg%401280w_1l_2o_100sh.jpg"><a href="http://www.dengmanman.top/xiaomi.html" target="_blank">仿小米官网</a></div>
+			<div class="demo"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527767652477&di=e7bf8fdaea32d732f36b0eea133dde75&imgtype=0&src=http%3A%2F%2Fwww.17sucai.com%2Fupload%2F401021%2F2015-08-31%2F87e2c900c60c5178454fdaf4da490951_big.jpg"><a href="http://www.dengmanman.top/waterfull.html" target="_blank">瀑布流布局</a></div>
+		</div>
+		
+	
+	</div>
+	
+</div>
+
+
+<script>
+	
+	
+	var  i=0,timer=null;
+	var ele=document.getElementById("box1");
+	
+		console.log(ele.children[0]);
+	var step=ele.children[0].offsetWidth;
+	animation(target,step);
+	window.onresize=function resize(){
+			ele=document.getElementById("box1");
+			step=ele.children[0].offsetWidth;
+			animation(target,step);
+	};
+	var target=step*5;
+	
+	
+	function turn(){
+	var list=document.getElementsByClassName("box")[0].children;//注意返回的是数组；
+	console.log(list);
+	//list[0].style.position="absolute";
+	
+	setInterval(function(){
+	
+		i-=1;
+		if(i===-5){i=0}
+		list[0].style.left=i*1200+"px";
+		console.log(list[0].style.left)
+	},1000)
+	}
+	//turn();
+	function animation(target,step){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			
+			var offset=ele.offsetLeft;
+			//step=(target-ele.off)/0.2
+			//ele.offsetLeft+=step;
+			//ele.style.left=ele.offsetLeft+"px";
+			console.log(Math.abs(offset));
+			if(Math.abs(offset)==target){
+				offset=0;
+			}offset=offset-step;
+			ele.style.left=offset+"px";
+			console.log(target);
+		},1000)
+		
+		}
+		//animation(target,step);
+</script>
 </body>
+
+
+
+
+
 </html>
