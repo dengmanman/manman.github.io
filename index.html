@@ -2,6 +2,7 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 *{margin:0px;padding:0px;text-decoration:none;}
@@ -341,7 +342,7 @@ ul{
 	margin:0 auto;
 	background:#000;
 }
-li{
+ li{
 	list-style:none;
 	font-size:20px;
 	text-align:center;
@@ -372,10 +373,85 @@ li{
 	left:0px;
 	
 }
+
+
+
+
+<!--  top-animation -->
+
+	.applist{
+		list-style:none;
+		border:none;
+		padding:0px;
+		
+	}
+	.box{
+		width:100%;
+		height:650px;
+		overflow:hidden;
+		
+	}
+	#app{
+		width:5680px;
+		height:550px;
+		position:relative;
+		overflow:hidden;
+		animation:move 60s linear infinite;
+	}
+	.turn{
+		transform:rotateY(180deg);
+		height:500px;
+	}
+	.position1{
+		position:absolute;
+		left:0;
+		height:500px;
+	}
+	.position img{
+		height:500px;
+	}
+	.position2{
+		position:absolute;
+		left:1920px;
+		height:500px;
+	}
+	.position3{
+		position:absolute;
+		left:3740px;
+		height:500px;
+		border-shadow:10px;
+	}
+	.middle{
+		width:1920px;
+	}
+	.bike{
+		height:100px;
+		width:50px;
+		position:fixed;
+		top:520px;
+		left:200px;
+		
+	}
+	@keyframes move{
+		from{
+			left:0
+		}
+		to{
+			left:-3750px;
+		}
+	}
 </style>
 </head>
 
 <body>
+<div class='box'>
+	<div id="app">
+		<div class='position1 applist'><img src='./background.jpg' ></div>
+		<div class='position2 turn applist'><img src='./background.jpg' ></div>
+		<div class='position3 applist' ><img src='./background.jpg' ></div>
+		<img src='./bike.jpg' class='bike'>
+	</div>
+</div>
 <div class="all">
 	<canvas id='mycanva' ></canvas>
 	<div class="center">
