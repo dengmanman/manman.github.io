@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #obox {margin: 0 auto; width: 50%; height: 100%; position: relative; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; perspective-origin: center 250px; }
+
+        #obox ul {margin: 0 auto; width: 300px; height: 300px; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; position: absolute; }
+        #obox ul li {
+            list-style: none;
+            line-height: 30px; text-align: center; font-size: 16px; position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="oscene">
+    <div id="obox">
+        <ul id="">
+
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    var arr=[1,3,5,7,9,11,9,7,5,3,1]
+    window.onload= function () {
+    var oscene=document.getElementById('oscene');
+        var obox=document.getElementById('obox');
+        var ul=obox.getElementsByTagName('ul')[0];
+        var ali=ul.getElementsByTagName('li');
+        var theta=Math.PI/(arr.length-1);
+        var phi=0;
+        var r=200;
+        var a=0;
+
+        for(var i=0;i<arr.length;i++){
+            phi=2*Math.PI/arr[i];
+            for(var j=0;j<arr[i];j++){
+                a++;
+                var li=document.createElement('li');
+                var list=['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m',1,2,3,4,5,6,7,8,9,'!','@','#','$','%','^','&','*','(',')',
+                    'q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m',1,2,3,4,5,6,7,8,9,'!','@','#','$','%','^','&','*','(',')',
+                    'q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m',1,2,3,4,5,6,7,8,9,'!','@','#','$','%','^','&','*','(',')',
+                    'q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m',1,2,3,4,5,6,7,8,9,'!','@','#','$','%','^','&','*','(',')',
+                ]
+                var list1=['html5','css3','大数据','七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                    '七里香','你爱不爱我','你猜','一不小心','快点告诉你','别等了','烟火里的尘埃','放过','小事一件','小伞花','一些规律','丫头','寻水的鱼','讲真的','你说',
+                ]
+                li.innerHTML=list1[a];
+                drawballs(li,theta,phi,i,j)
+                ul.appendChild(li);
+            }
+        }
+        for(var k=0;k<ali.length;k++){
+            ali[k].style.transform='translate3D('+ali[k].circlex+'px,'+ali[k].circley+'px,'+ali[k].circlez+'px) rotateY('+ali[k].circlephi+'rad) rotateX('+ali[k].circletheta+'rad)';
+            //ali[k].style.transform = 'translate3D(' + ali[k].circlex + 'px,' + ali[k].circley + 'px,' + ali[k].circlez + 'px)';
+        }
+        var angel=0;
+        setInterval(function(){
+            angel++;
+            ul.style.transform='rotateY('+angel+'deg)';
+        },30)
+        function drawballs(obj,theta,phi,i,j){
+            obj.circlex=r*Math.sin(theta*i)*Math.sin(phi*j)+100;
+            obj.circley= r*Math.cos(theta*i)+200;
+            obj.circlez=r*Math.sin(theta*i)*Math.cos(phi*j);
+            obj.circletheta=theta*i-Math.PI/2;
+            obj.circlephi=phi*j;
+//            obj.circlex = r * Math.sin(theta * i) * Math.sin(phi * j)+200;//加200和加400效果是不一样的
+//            obj.circley = r * Math.cos(theta * i)+200;
+//            obj.circlez = r * Math.sin(theta * i) * Math.cos(phi * j);
+      }
+    }
+</script>
+</html>
