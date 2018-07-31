@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<style>
+		.box{
+			width:750px;
+			height:269px;
+			overflow: hidden;
+			position: relative;
+			background: #000;
+		}
+		.box2{
+			left:0px;
+			width:3000px;
+			height: 500px;
+			position: absolute;
+			animation: move 0.5s steps(1,start) infinite;
+		}
+		.text{
+			stroke:black;
+			font-size: 50px;
+			fill:none;
+			stroke-dasharray:90 130; 
+			animation: line 6s infinite linear;
+		}
+		.text1{
+			stroke: #3498db;
+			text-shadow: 0 0 5px #3498db;
+			animation-delay: -1.5s;
+		}
+		.text2{
+			stroke: #f39c12;
+			text-shadow: 0 0 5px #f39c12;
+			animation-delay: -3s;
+		}
+		.text3{
+			stroke: #e74c3c;
+			text-shadow: 0 0 5px #e74c3c;
+			animation-delay: -4.5s;
+		}
+		.text4{
+			stroke: #9b59b6;
+			text-shadow: 0 0 5px #9b59b6;
+			animation-delay: -6s;
+		}
+		@keyframes move{
+			0%{
+				left: :0px; 
+			}
+			33%{
+				left:-741px;
+			}
+			66%{
+				left: -1483px
+			}
+			99%{
+				left: -2224px
+			}
+			100%{
+
+			}
+		}
+		@keyframes line{
+			100%{
+			stroke-dashoffset:-1000;
+			}
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+<div class="box">
+	<div class='box2'><img src='./imgs/animate.png'></div>
+	<svg width='800' height='500'>
+		<defs>
+			<g id='manman'>
+				<text  text-anchor='middle' x='50%' y='50%' > manman</text>
+			</g>	
+		</defs>
+		<use xlink:href='#manman' class='text' ></use>
+		<use xlink:href='#manman' class='text text1' ></use>
+		<use xlink:href='#manman' class='text text2' ></use>
+		<use xlink:href='#manman' class='text text3' ></use>
+		<use xlink:href='#manman' class='text text4' ></use>
+	</svg>
+</div>
+<div style="width:100%;text-align: center;">
+	<h1>帧动画与svg的霓虹灯效果</h1>
+	<hr>
+	<div style="text-align: left;">
+		<h2>帧动画</h2>
+		<h3>1.帧动画的原理</h3>
+		<p>帧动画原理其实和轮播图的原理是类似的。小时候大家都很喜欢看动画片，各种动漫也给大家留下许许多多的童年回忆，那我们看的动漫又是怎么做出来的呢。其实就是把一套动作拆解成多个动作，一个动作一张图片，然后一张一张图片快速的轮播过来，就会形成我们看到的动画了。</p>
+		<p>比如我们今天看到这张图片</p>
+		<div style="width:100%;overflow: auto;">
+			<img src="./imgs/animate.png">
+		</div>
+		<p>很明显可以看到我们这一套跑动的动画一共做了四个动作，那接下来我们就可以写代码了。</p>
+		<p>第一步：把我们的电视做出来。想想看我们看动画片是不是需要有个电视，哈哈哈哈。好，电视就是我们看到的黑色背景部分，我们的电视要多大，这个要取决于图片的大小了。图片的大小可以自己定义。那我们这里就用原图大小吧。图片总长2966，我们可以取整算3000.3000/4=750.那么我们的电视就取750px.</p>
+		<p>第二步，我们往我们的电视里摆上我们的动画，加个div，里面有个img.
+
+		</p>
+	</div>
+</div>
+</body>
+
+<script>
+
+
+</script>
+
+
+
+</html>
