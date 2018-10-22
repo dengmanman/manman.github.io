@@ -338,7 +338,27 @@ color:#FFF;
 
 }
 
-
+/*微信二维码*/
+.wx-box{
+	display:flex;
+	justify-content: center;
+}
+.wx-box-item{
+	flex: 1;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+#wx-code{
+	height:90px;
+	width:90px;
+	
+}
+#wx-code2{
+	height:90px;
+	width:90px;
+	
+}
 
 .nav{
 	margin:0 auto;
@@ -489,15 +509,15 @@ ul{
 					<li>专业：电子信息工程技术</li>
 					<li>毕业时间：2016年6月</li>
 					<li>求职：前端程序猿</li>
-					<li>技能：bootstrap、vue、JS</li>
+					<li>技能：vue全家桶、JS</li>
 					<li></li>
 					<li>自我简介：</li>
 					<li>对网页制作有较强兴趣，自学转</li>
-					<li>前端。能熟练掌握div+css布局</li>
-					<li>基本掌握dom事件，能做一些小</li>
-					<li>特效。比如能进行瀑布流布局，</li>
-					<li>手写轮播图等,有vue开发经验。</li>
-					<li>目前在学node.js，全栈方向。</li>
+					<li>前端。熟练掌握pc，移动端布局</li>
+					<li>熟练掌握js，有vue开发经验。</li>
+					<li>目前在学node.js，react。</li>
+					<li>掌握基本的数据库增删改查操作</li>
+					<li>能提供简单接口，全栈方向。</li>
 					<li>希望能有向前端大佬学习的机会。</li>
 				</ul>
 				</div>
@@ -512,8 +532,21 @@ ul{
 					
 					</div>
 					<div class='flex'>
-					<a href="http://sign.iaas-erp.com:99" target="_blank" class='item'>移动端vue审核项目（账号：xiaoping 无密码）</a>
+					<a href="http://sign.iaas-erp.com:99" target="_blank" class='item'>移动端vue审核项目（账号：xiaoping 无密码）</a>					
 					</div>
+					<div class='wx-box'>
+						<div class='wx-box-item'>
+							<div>vue微信商城项目</div>
+							<div>（请用微信扫描二维码）</div>
+							<img id='wx-code' src='https://qr.api.cli.im/qr?data=http%253A%252F%252Fwww.immerp.cn%252Fadmin%252Fwxlogin&level=H&transparent=true&bgcolor=%23ffffff&forecolor=%23000000&blockpixel=12&marginblock=1&logourl=http%3A&size=260&kid=cliim&key=fa709564669bd192d32d51867a36e593'>
+						</div>
+						<div class='wx-box-item'>
+							<div>联系方式</div>
+							<div>phone:13532889610</div>
+							<img id='wx-code2' src='607738962135657358.jpg'>
+						</div>
+					</div>
+					
 					</div>
 					
 				</div>
@@ -591,9 +624,6 @@ ul{
 		
 	}
 	setInterval(draw,1000/60)
-	
-	
-	
 	
 	
 	
